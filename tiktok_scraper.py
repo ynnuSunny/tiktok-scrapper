@@ -185,7 +185,7 @@ class TiktokBot(BaseBot):
         hashtags = self.parameters.get("hashtags")
 
 
-        # this is for
+        # this is for witing manually solve puzzle
         self._get("https://www.tiktok.com/tag/traveltok")
         WebDriverWait(self.driver, 100).until(
             EC.element_to_be_clickable((By.XPATH, self.XPATH_HASHTAG_VIDEO_URL))
